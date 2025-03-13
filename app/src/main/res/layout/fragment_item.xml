@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adapter.fragment.ItemFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/btn_get_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get data"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <EditText
+            android:id="@+id/et_item_id"
+            android:hint="Item ID"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <EditText
+            android:id="@+id/et_item_name"
+            android:hint="Item Name"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <EditText
+            android:id="@+id/et_item_description"
+            android:hint="Item Description"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:orientation="horizontal"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="Add"/>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="Update"/>
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:text="Delete"/>
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/rv_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp" />
+
+
+
+</LinearLayout>

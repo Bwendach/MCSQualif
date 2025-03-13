@@ -46,6 +46,10 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show()
             Log.i("LOGIN_USERNAME", username.toString())
             Log.i("LOGIN_PASSWORD", password.toString())
+
+            val intent = Intent(this, HomeActivity::class.java)
+            intent.putExtra("usernameKey", username.toString())
+            startActivity(intent)
         }
 
         tvRegisterNow.setOnClickListener {

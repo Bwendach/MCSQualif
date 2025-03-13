@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "317681215251",
+    "firebase_url" : "https://bdmcsqualif-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    "project_id": "bdmcsqualif",
+    "storage_bucket": "bdmcsqualif.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317681215251:android:df08f72ab7e6b37fe85ce6",
+        "android_client_info": {
+          "package_name": "com.example.bdapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVHcjd7-qHWjItf_ptjJ39Fwv_yjl2wWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
